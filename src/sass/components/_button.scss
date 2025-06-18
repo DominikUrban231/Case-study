@@ -1,7 +1,8 @@
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
+    width: fit-content;
+    margin-bottom: 11px;
     padding: 15px 25px;
     border-radius: 29px;
     background-color: $color-black;
@@ -17,4 +18,8 @@
     &:hover {
         background-color: lighten($color-black, 10%);
     }
+    @media (max-width: 768px) {
+        margin-bottom: 105px;
+    }
+
 }

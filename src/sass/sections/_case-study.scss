@@ -1,28 +1,98 @@
 .case_study {
-    height: 644px;
-    display: flex;
-    gap: 75px;
-    // flex-wrap: wrap;
+    height: auto;
     width: 100%;
-    // margin-block: 100px;
+    margin-block: 100px;
+    position: relative;
+    
+    /* Ustawienia dla widoku desktopowego */
+    @media (min-width: 992px) {
+        display: grid;
+        grid-template-areas:
+            "header main"
+            "aside main";
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto 1fr;
+        gap: 75px;
+        min-height: 644px;
+    }
+    
+    /* Ustawienia dla widoku mobilnego */
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+        .header {
+            order: 1; /* Pierwszy element */
+        }
+        
+        main {
+            order: 2; /* Drugi element */
+        }
+        
+        aside {
+            order: 3; /* Trzeci element */
+        }
+    }
+
+    
+    .header {
+        grid-area: header;
+        margin-bottom: 40px;
+        
+        span {
+            color: #777;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+    }
     
     aside {
-        max-width:600px;
-        // width: 472px;
-        // flex-shrink: 0;
+        grid-area: aside;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        @media (max-width: 1600px) {
+            max-width: 400px;
+        }
+        
+        @media (max-width: 991px) {
+            max-width: 100%;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+            // flex-shrink: 0; /* Zapobiega zmniejszaniu się sekcji nagłówka */
+        }
+        
+        /* Swiper musi wypełnić pozostałą przestrzeń */
+        .realization-swiper,
+        .swiper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
     }
     
     main {
-        // flex: 1;
-        // min-width: 300px;
-    }
-    
-    @media (max-width: 992px) {
-        height: auto;
-        flex-direction: column;
+        grid-area: main;
+        min-width: 300px;
+        height: 100%;
         
-        aside, main {
-            width: 100%;
+        @media (min-width: 992px) {
+            grid-row: span 2; /* Zajmuje dwa rzędy w gridzie */
+        }
+        
+        .hero {
+            height: 100%;
+            border-radius: $border-radius;
+            overflow: hidden;
         }
     }
 }
