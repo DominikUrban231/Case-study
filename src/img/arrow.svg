@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.747" height="34.747" viewBox="0 0 34.747 34.747">
+  <g id="przewijanie_w_prawo" data-name="przewijanie w prawo" transform="translate(34.747 34.747) rotate(180)">
+    <path id="Path_1701" data-name="Path 1701" d="M0,0H34.747V34.747H0Z" fill="none"/>
+    <path id="Path_1702" data-name="Path 1702" d="M5,12H25.269" transform="translate(2.239 5.373)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_1703" data-name="Path 1703" d="M5,12l5.791,5.791" transform="translate(2.239 5.373)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_1704" data-name="Path 1704" d="M5,13.791,10.791,8" transform="translate(2.239 3.582)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

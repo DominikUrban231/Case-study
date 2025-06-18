@@ -1,0 +1,28 @@
+.case_study {
+    height: 644px;
+    display: flex;
+    gap: 75px;
+    // flex-wrap: wrap;
+    width: 100%;
+    // margin-block: 100px;
+    
+    aside {
+        max-width:600px;
+        // width: 472px;
+        // flex-shrink: 0;
+    }
+    
+    main {
+        // flex: 1;
+        // min-width: 300px;
+    }
+    
+    @media (max-width: 992px) {
+        height: auto;
+        flex-direction: column;
+        
+        aside, main {
+            width: 100%;
+        }
+    }
+}

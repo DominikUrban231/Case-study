@@ -1,0 +1,44 @@
+@import './abstract/_variables';
+@import './components/_container';
+@import './components/_button';
+@import './components/_hero';
+@import './components/_swiper';
+@import './sections/_case-study';
+@import './components/_header';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: 'Satoshi', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  min-height: 100vh;
+}
+
+body {
+  h1 {
+    font-size: 70px;
+    line-height: 81px;
+    letter-spacing: 0px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    letter-spacing: 0px;
+
+  }
+  p {
+    line-height: 24px;
+  }
+  img {
+    display: block;
+  }
+}

@@ -1,0 +1,19 @@
+.hero {
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+    overflow: hidden;
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .logo {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        background-color: $color-white;
+        padding: 46.66px 28.4px 45.66px 29.4px;
+        border-radius: 20px;
+    }
+}
